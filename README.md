@@ -1,5 +1,12 @@
 <img src="https://github.com/ccbogel/QualCoder/blob/master/qualcoder.png" width=200 height=200>
 
+# This fork
+
+A few tweaks to Dr. Colin Curtain's Qualcoder : 
+
+-Code Tree columns are now movable and resizable
+-More tweaks incoming...
+
 # QualCoder
 QualCoder is a qualitative data analysis application written in Python.
 
