@@ -5,6 +5,7 @@
 A few tweaks to Dr. Colin Curtain's Qualcoder : 
 
 -Code Tree columns are now movable and resizable
+
 -More tweaks incoming...
 
 # QualCoder
