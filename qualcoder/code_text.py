@@ -558,7 +558,6 @@ class DialogCodeText(QtWidgets.QWidget):
         else:
             self.ui.treeWidget.setColumnHidden(1, False)
         
-        header.setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
         header.setStretchLastSection(False)
         # Add top level categories
         remove_list = []
