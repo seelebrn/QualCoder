@@ -6,7 +6,7 @@ A few tweaks to Dr. Colin Curtain's Qualcoder :
 
 -Code Tree columns are now movable and resizable
 
--More tweaks incoming...
+-More tweaks incoming... incl. code merging in "code reports" window / Search for code.
 
 # QualCoder
 QualCoder is a qualitative data analysis application written in Python.
