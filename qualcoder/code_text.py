@@ -550,14 +550,17 @@ class DialogCodeText(QtWidgets.QWidget):
         self.ui.treeWidget.setColumnCount(4)
         self.ui.treeWidget.setHeaderLabels([_("Name"), _("Id"), _("Memo"), _("Count")])
         header = self.ui.treeWidget.header()
-        header.setSectionsMovable(True)  # Addition to make sure columns are moveable - seelebrn
-        header.setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Interactive)  # Making columns resizeable - seelebrn
+        header.setSectionsMovable(True)  ## Addition to make sure columns are moveable - seelebrn
+        header.setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Interactive)  ## Making columns resizeable - seelebrn
         
         if not self.app.settings['showids']:
             self.ui.treeWidget.setColumnHidden(1, True)
         else:
             self.ui.treeWidget.setColumnHidden(1, False)
-        
+        for column in range(self.ui.treeWidget.columnCount()): ## Dealing with the invisible column issue - likely due to my inability to understand stuff.
+            if not self.ui.treeWidget.isColumnHidden(column):
+                self.ui.treeWidget.resizeColumnToContents(column)
+        self.ui.treeWidget.setColumnWidth(0, 450) ## Setting a default size for column
         header.setStretchLastSection(False)
         # Add top level categories
         remove_list = []
